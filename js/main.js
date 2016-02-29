@@ -5,16 +5,6 @@ var adjective = prompt('An adjective (beautiful, super, etc.)');
 var verb = prompt('A past tense verb (ran, burped, etc.)');
 var story = prompt('Which story would you like?\na) Snacking\nb) Escaping\nc) Winning\nEnter the letter below.');
 
-if (story == 'a' || story == 'A') {
-  storyA();
-} else if (story == 'b' || story == 'B') {
-  storyB();
-} else if (story == 'c' || story == 'C') {
-  storyC();
-} else {
-  document.write('You are no fun.');
-};
-
 var storyA = function () {
   document.write('After snacking on ' + adjective + ' treats, the ' + colour + ' bellied ' + creature + ' ' + verb + ' for hours.');
 };
@@ -25,4 +15,14 @@ var storyB = function () {
 
 var storyC = function () {
   document.write('Jackson chose his ' + adjective + ', ' + colour + ' ' + creature + ' card and ' + verb + 'it to the table knowing he won.');
+};
+
+if (story == 'a' || story == 'A') {
+  storyA();
+} else if (story == 'b' || story == 'B') {
+  storyB();
+} else if (story == 'c' || story == 'C') {
+  storyC();
+} else {
+  document.write('You are no fun.');
 };
