@@ -1,15 +1,3 @@
-var storyA = function () {
-  document.write('After snacking on ' + adjective + ' treats, the ' + colour + ' bellied ' + creature + ' ' + verb + ' for hours.');
-};
-
-var storyB = function () {
-  document.write('Ameilia ' + verb + ' through the ' + adjective + ' ' + colour + ' nebula escaping the space ' +  creature + '.');
-};
-
-var storyC = function () {
-  document.write('Jackson chose his ' + adjective + ', ' + colour + ' ' + creature + 'and ' + verb + 'it to the table knowing he won.');
-};
-
 var intro = alert('Let’s make a story together!');
 var colour = prompt('A colour (orange, indigo, etc.)');
 var creature = prompt('A creature (dragon, moth, etc.)');
@@ -27,20 +15,14 @@ if (story == 'a' || story == 'A') {
   document.write('You are no fun.');
 };
 
-/*
-var abc = ['a', 'b', 'c'];
+var storyA = function () {
+  document.write('After snacking on ' + adjective + ' treats, the ' + colour + ' bellied ' + creature + ' ' + verb + ' for hours.');
+};
 
-switch (abc) {
-  case 'a' :
-    document.write('After snacking on ' + adjective + ' treats, the ' + colour + ' bellied ' + creature + ' ' + verb + ' for hours.');
-    break;
+var storyB = function () {
+  document.write('Ameilia ' + verb + ' through the ' + adjective + ' ' + colour + ' nebula escaping the space ' +  creature + '.');
+};
 
-  case 'b' :
-    document.write('Ameilia ' + verb + ' through the ' + adjective + ' ' + colour + ' nebula escaping the space ' + creature + '.');
-    break;
-
-  case 'c' :
-    document.write('Jackson chose his ' + adjective + ', ' + colour + ' ' + creature + ' card and ' + verb + ' it to the table knowing he won.');
-    break;
-}
-*/
+var storyC = function () {
+  document.write('Jackson chose his ' + adjective + ', ' + colour + ' ' + creature + ' card and ' + verb + 'it to the table knowing he won.');
+};
